@@ -1,5 +1,8 @@
 The SQL Detective Game
 
+Learn the basics of Relational database management by playing the Detective Game. Uncover how database technology can be applied to business situations to help you manage your company information.
+
+
 H1. IBM
 
 IBM has a nice game to let people get familiar with sql.
@@ -14,14 +17,8 @@ http://www.ibm.com/developerworks/data/tutorials/dm0804moffatt/
 
 H1. Game scenario
 
-You are an intern working in a security department for a large enterprise. As part of your training,
-you have been asked to participate in a crime investigation simulation to help locate a missing
-ThinkPad computer.
-Learn the basics of Informix and relational database management by playing the
-Informix
-Detective Game
-. Uncover how database technology can be applied to business situations to help
-you manage your company information.
+You are an intern working in a security department for a large enterprise. As part of your training, you have been asked to participate in a crime investigation simulation to help locate a missing *thinkpad* laptop.
+
 
 H1. Data model
 
@@ -36,16 +33,16 @@ The of the Detective Game database consists of four tables: employee, hardware, 
                                                +------------------+  +-----------------+
                                                | Employee         |  | Hardware        |
                                                |------------------|  |-----------------|
-                                               | Employee ID      |  | Employee Id     |
-                                               | Last name        |  | Location        |
-                           +----------------+  | First name       |  | Type number     |
-                           | Security       |  | Manager ID       |  | Serial number   |
+                                               | Employee_ID      |  | Employee_ID     |
+                                               | Last_name        |  | Location        |
+                           +----------------+  | First_name       |  | Type_number     |
+                           | Security       |  | Manager_ID       |  | Serial_number   |
                            |----------------|  | Location         |  +-----------------+
-   +------------------+    | Sign out date  |  | Extension        |
-   | Lobby            |    | Sign out time  |  | Gender           |
-   |------------------|    | Sign in time   |  | Hair colour      |
-   | Badge number     |    | Badge number   |  | Badge number     |
-   | Last name        |    +----------------+  | Restricted access|
-   | First name       |                        +------------------+
+   +------------------+    | Sign_out_date  |  | Extension        |
+   | Lobby            |    | Sign_out_time  |  | Gender           |
+   |------------------|    | Sign_in_time   |  | Hair_colour      |
+   | Badge_number     |    | Badge_number   |  | Badge number     |
+   | Last_name        |    +----------------+  | Restricted_access|
+   | First_name       |                        +------------------+
    +------------------+
 ```

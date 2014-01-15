@@ -1,0 +1,1 @@
+The suspect signed out of the building between 4 p.m. and 7 p.m. 

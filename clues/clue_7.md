@@ -1,0 +1,1 @@
+A thinkpad with the same TYPE number as that of the missing machine was found during an inventory audit in room X-2111 which is a restricted access area. 

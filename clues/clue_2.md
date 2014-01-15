@@ -1,0 +1,1 @@
+Security has confirmed that the thinkpad went missing on July 4, 2003. (Hint: Determine the complete list of potential suspects by joining two tables.)

@@ -1,0 +1,1 @@
+Video surveillance tapes show that only males exited the building carrying thinkpad cases between 4 p.m. and 7 p.m. on July 4, 2003 
