@@ -1,13 +1,17 @@
-CREATE DATABASE SQLDETECTIVE;
-CREATE USER SQLDETECTIVE WITH PASSWORD 'sherlock' NOCREATEDB NOCREATEROLE NOCREATEUSER CONNECTION LIMIT 3; 
-GRANT ALL ON DATABASE sqldetective TO sqldetective;
+CREATE DATABASE SQLDETECTIVE DEFAULT CHARACTER SET latin1;
+CREATE USER 'sqldetective'@'localhost' IDENTIFIED BY 'sherlock';
+GRANT ALL ON SQLDETECTIVE.* TO 'sqldetective'@'localhost';
+FLUSH PRIVILEGES;
+USE SQLDETECTIVE;
+
+
 -- Table SECURITY
 CREATE TABLE security  (
     badge_number CHAR(5) NOT NULL PRIMARY KEY,
     sign_out_date DATE,
-    sign_out_time TIME without time zone,
-    sign_in_time TIME without time zone
-    );
+    sign_out_time TIME,
+    sign_in_time TIME
+    ) ENGINE = InnoDb;
 
 -- Table EMPLOYEE
 CREATE TABLE employee (
@@ -21,16 +25,15 @@ CREATE TABLE employee (
     hair_colour CHAR(6),
     badge_number CHAR(5) REFERENCES security (badge_number),
     restricted_access CHAR(1)
-    );
+    ) ENGINE = InnoDb;
 
 -- Table LOBBY
-
 CREATE TABLE lobby (
     first_name VARCHAR(20),
     last_name VARCHAR(20),
     badge_number CHAR(5) NOT NULL REFERENCES security (badge_number),
     PRIMARY KEY (first_name, last_name)
-);
+    ) ENGINE = InnoDb;
     
 -- Table HARDWARE
 CREATE TABLE hardware (
@@ -39,4 +42,4 @@ CREATE TABLE hardware (
     hardware_tn CHAR(8),
     hardware_sn CHAR(8) NOT NULL,
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
-);
+    ) ENGINE = InnoDb;
