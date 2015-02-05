@@ -2,24 +2,24 @@ The SQL Detective Game
 
 Learn the basics of Relational database management by playing the Detective Game. Uncover how database technology can be applied to business situations to help you manage your company information.
 
-H1. IBM
+# IBM
 
 IBM has a nice game to let people get familiar with sql.
 The game teaches relational database concepts and shows how technology can be applied to solving real-life problems.
 
-H1. Non IBM
+# Non IBM
 This is available for DB2 and informix, I wanted to play it on a postgresql db. As it turned out ok, I wanted to make it easy for others as well. So I added the mysql dialect as well.
 
-H1. See also
+# See also
 
 http://www.ibm.com/developerworks/data/tutorials/dm0804moffatt/
 
-H1. Game scenario
+# Game scenario
 
 You are an intern working in a security department for a large enterprise. As part of your training, you have been asked to participate in a crime investigation simulation to help locate a missing *thinkpad* laptop.
 
 
-H1. Data model
+# Data model
 
 The of the Detective Game database consists of four tables: employee, hardware, lobby, and security. It also shows you the type of information stored in each of these tables:
 
@@ -44,12 +44,10 @@ The of the Detective Game database consists of four tables: employee, hardware, 
    | Last_name        |    +----------------+  | Restricted_access|
    | First_name       |                        +------------------+
    +------------------+
-``
+```
 
 
-H1. Legal blabla
+# Legal blabla
 
 I am no lawyer, nor do I intend to do something wrong. I just want to solve this puzzle without installing Informix.
 I attached the IBM download agreement in the COPYING file. I guess this is a derrived work.
-
-`
